@@ -61,7 +61,7 @@ template <typename T> void Stack<T>::clear() {
 //****************************************************************************
 template <typename T> T Stack<T>::getTop() const {
     if (isEmpty())
-        throw "Error: The stack is empty.";
+        throw "Error: The stack is empty. T";
     return top->value;
 }
 
@@ -74,7 +74,7 @@ template <typename T> bool Stack<T>::isEmpty() const { return _size == 0; }
 //****************************************************************************
 template <typename T> void Stack<T>::print() const {
     if (isEmpty())
-        throw "Error: The stack is empty.";
+        throw "Error: The stack is empty. P";
     Element *aux;
     aux = top;
     while (aux != nullptr) {
